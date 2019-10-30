@@ -21,6 +21,16 @@ public class MonsterController {
         return "index";
     }
 
+    @GetMapping("/catalogue")
+    public String catalogue() {
+        return "catalogue";
+    }
+
+    @GetMapping("/profile")
+    public String profile() {
+        return "profile";
+    }
+
     @GetMapping("/monsters")
         public String monster (Model model, @RequestParam Long id) {
 
