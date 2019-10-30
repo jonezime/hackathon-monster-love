@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--<link rel="stylesheet" th:href="@{css/footer.css}">-->
+    <link rel="stylesheet" th:href="@{css/style.css}">
+    <link rel="icon" href="../img/coeurlogo.png" />
+    <title>Monster - Homepage</title>
+</head>
+<body>
+<header></header>
+<div class="index">
+    <div class="index-title">
+        <div class="heart-logo-div">
+            <p class="title-p">M</p>
+            <div class="img"><img class="heart-logo-image" src="../img/coeurlogo.png" alt="logo heart"></div>
+            <p class="title-p">NSTER</p>
+        </div>
+        <div class="love-text">
+            <p>Love</p>
+        </div>
+        <div class="title-bar"></div>
+        <p class="title-text1">Trouver l'amour au milieu des ténèbres</p>
+    </div>
+    <div class="buttons">
+        <a th:href="@{join}"><div class="button-join">CONNEXION</div></a>
+        <a th:href="@{sign}"><div class="button-sign">INSCRIPTION</div></a>
+    </div>
+</div>
+<!--<footer th:replace="footer.html :: footer"></footer>-->
+</body>
+</html>
