@@ -1,0 +1,313 @@
+@font-face {
+    font-family: 'Monster';
+    src: url(../fonts/mrsmonster.ttf);
+}
+
+@font-face {
+    font-family: 'Darleston';
+    src: url(../fonts/Darleston.otf);
+}
+
+@font-face {
+    font-family: 'Hack';
+    src: url("../fonts/Hack-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body,html {
+    background: url(../img/backpic1.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+body, html {
+    min-height: 100%;
+    position: relative;
+}
+
+.index {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 75px;
+}
+
+.index-title {
+    display: flex;
+    flex-direction: column;
+    margin-top: 251px;
+    align-items: center;
+    align-content: center;
+}
+
+.heart-logo-div {
+    margin-top: -50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+.title-p {
+    font-size: 52px;
+    font-weight: bold;
+    line-height: 32px;
+    color: #9c1c2b;
+    font-family: 'Monster';
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px black;
+    margin-top: 5px;
+}
+
+.heart-logo-image {
+    height: 52px;
+    width: 52px;
+    margin-left: 2px;
+    margin-right: 0px;
+}
+
+/* Halo lumineux */
+.img {
+    position: relative;
+}
+.img::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    background: rgba(255,255,255,.2);
+    border-radius: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+.img:hover::before {
+    -webkit-animation: circle .75s;
+    animation: circle .75s;
+}
+@-webkit-keyframes circle {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    100% {
+        width: 200%;
+        height: 200%;
+        opacity: 0;
+    }
+}
+@keyframes circle {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    100% {
+        width: 200%;
+        height: 200%;
+        opacity: 0;
+    }
+}
+
+.love-text {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #ff3d35;
+    font-family: 'Darleston';
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px black;
+    margin-left: 175px;
+}
+
+.title-text {
+    margin-top: 10px;
+    color:white;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 1px 1px 2px black;
+}
+
+.title-bar {
+    margin-top: 20px;
+    height: 1px;
+    width: 100px;
+    background-color: #9c1c2b;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-text1 {
+    margin-top: 38px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    font-family: 'Hack';
+    text-align: center;
+}
+
+.title-text2 {
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 18px;
+    text-shadow: 1px 1px 2px black;
+    letter-spacing: 1px;
+    font-family: 'Hack';
+    text-align: center;
+    font-weight: bold;
+}
+
+.connection-window {
+    width: 325px;
+    height: 412px;
+    margin-top: 175px;
+    background: #545353;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.95;
+    border-radius: 25px 25px 0 0;
+}
+
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Hack';
+}
+
+.buttons a div {
+    margin-top: 36px;
+    height: 48px;
+    width: 218px;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 10px 10px 10px 10px;
+    opacity: 0.9;
+    border: none;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 18px;
+    text-align: center;
+    line-height: 48px;
+    text-shadow: 1px 1px 2px black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.buttons-small {
+    margin-left: 10px;
+    height: 25px;
+    width: 70px;
+    text-transform: uppercase;
+    background-color:#9c7412;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 10px 10px 10px 10px;
+    opacity: 0.7;
+    border: none;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    line-height: 25px;
+}
+
+.button-small-detail {
+    margin: auto;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+    font-weight: lighter;
+}
+
+.button-join {
+    background-color: #9c1c2b;
+    color: white;
+    font-family: 'Hack';
+}
+
+.button-sign {
+    background-color: #737373;
+    color: black;
+    font-family: 'Hack';
+}
+
+.logo-box {
+    height: 38px;
+    width: 38px;
+    background-size: contain;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.first-box {
+    margin-top: 60px;
+    height: 38px;
+    display: flex;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.child-box {
+    margin-top: 10px;
+    height: 38px;
+    display: flex;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.text-box {
+    width: 244px;
+    border-style: none;
+    border-radius: 0 10px 10px 0;
+    line-height: 38px;
+    padding-left: 15px;
+}
+
+.not-yet-window {
+    position: relative;
+    height: 50px;
+    width: 325px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#8A8A8A;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0 0 25px 25px;
+    opacity: 0.95;
+}
+
+.not-yet-text {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+
