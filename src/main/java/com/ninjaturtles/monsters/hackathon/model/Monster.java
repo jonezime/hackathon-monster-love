@@ -1,7 +1,5 @@
 package com.ninjaturtles.monsters.hackathon.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
 public class Monster {
 
     private String id;
@@ -9,11 +7,10 @@ public class Monster {
     private String level;
     private String attack;
     private String defense;
+    private String special;
     private String picture;
     private String description;
-    @JsonProperty("created_at")
     private String createdAt;
-    @JsonProperty("updated_at")
     private String updatedAt;
 
 
@@ -59,6 +56,14 @@ public class Monster {
 
     public void setDefense(String defense) {
         this.defense = defense;
+    }
+
+    public String getSpecial() {
+        return special;
+    }
+
+    public void setSpecial(String special) {
+        this.special = special;
     }
 
     public String getPicture() {

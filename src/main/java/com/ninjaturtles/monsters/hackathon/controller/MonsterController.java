@@ -1,6 +1,7 @@
 package com.ninjaturtles.monsters.hackathon.controller;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.ninjaturtles.monsters.hackathon.model.Monster;
 import org.springframework.stereotype.Controller;
@@ -20,13 +21,13 @@ public class MonsterController {
         return "index";
     }
 
-    @GetMapping("/monster")
+    @GetMapping("/monsters")
         public String monster (Model model, @RequestParam Long id) {
 
             WebClient webClient = WebClient.create(MONSTER_URL);
             Mono<String> call = webClient.get()
                     .uri(uriBuilder -> uriBuilder
-                            .path("/monster/{id}")
+                            .path("/monsters/{id}")
                             .build(id))
                     .retrieve()
                     .bodyToMono(String.class);
@@ -36,13 +37,14 @@ public class MonsterController {
             ObjectMapper objectMapper = new ObjectMapper();
             Monster monsterObject = null;
             try {
-                monsterObject = objectMapper.readValue(response, Monster.class);
+                JsonNode root = objectMapper.readTree(response);
+                monsterObject = objectMapper.convertValue(root.get("monster"), Monster.class);
             } catch (JsonProcessingException e) {
                 e.printStackTrace();
             }
 
             model.addAttribute("monsterInfos", monsterObject);
 
-            return "monster";
+            return "monsters";
         }
 }
