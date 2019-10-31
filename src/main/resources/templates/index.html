@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" th:href="@{css/style.css}">
-    <link rel="icon" href="../img/coeurlogo.png" />
+    <link rel="icon" href="../img/coeurlogo.png"/>
     <title>Monster - Homepage</title>
 </head>
 <body>
@@ -13,7 +13,8 @@
     <div class="index-title">
         <div class="heart-logo-div">
             <p class="title-p">M</p>
-            <div class="img"><a th:href="@{catalogue}"><img class="heart-logo-image" src="../img/coeurlogo.png" alt="logo heart"></a></div>
+            <div class="img"><a th:href="@{catalogue/1}"><img class="heart-logo-image" src="../img/coeurlogo.png"
+                                                              alt="logo heart"></a></div>
             <p class="title-p">NSTER</p>
         </div>
         <div class="love-text">
@@ -23,8 +24,12 @@
         <p class="title-text1">Trouver l'amour au milieu des ténèbres...</p>
     </div>
     <div class="buttons">
-        <a th:href="@{account}"><div class="button-join">CONNEXION</div></a>
-        <a th:href="@{/}"><div class="button-sign">INSCRIPTION</div></a>
+        <a href="http://localhost:8080/catalogue/1">
+            <div class="button-join">CONNEXION</div>
+        </a>
+        <a th:href="@{/}">
+            <div class="button-sign">INSCRIPTION</div>
+        </a>
     </div>
 </div>
 </body>

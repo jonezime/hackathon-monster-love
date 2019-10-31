@@ -4,37 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" th:href="@{css/listmatch.css}">
-    <link rel="icon" href="../img/coeurlogo.png" />
+    <link rel="stylesheet" th:href="@{../css/listmatch.css}">
+    <link rel="icon" href="../img/coeurlogo.png"/>
     <title>Monster - Ma liste</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"/>
 </head>
 <body>
 <div class="block">
     <header class="header">
-        <a th:href="@{catalogue}"><img class="heart-logo-image" src="../img/coeurlogo.png" alt="logo heart"></a>
-        <a th:href="@{account}"><img class="header-logo-avatar" src="../icons/icons8-purple-man-96.png" alt="logo avatar"></a>
-        <a th:href="@{discussion}"><img class="header-logo-courier" src="../icons/icons8-message-chat-100.png" alt="logo courier"></a>
+        <a th:href="@{http://localhost:8080/catalogue/{id}(id=${monsterInfos.id})}"><img class="heart-logo-image"
+                                                                                         src="../img/coeurlogo.png"
+                                                                                         alt="logo heart"></a>
+        <a th:href="@{http://localhost:8080/account/{id}(id=${monsterInfos.id})}"><img class="header-logo-avatar"
+                                                                                       src="../icons/icons8-purple-man-96.png"
+                                                                                       alt="logo avatar"></a>
+        <a th:href="@{http://localhost:8080/listmatch/{id}(id=${monsterInfos.id})}"><img class="header-logo-courier"
+                                                                                         src="../icons/icons8-message-chat-100.png"
+                                                                                         alt="logo courier"></a>
     </header>
 </div>
 <div class="index">
     <div class="index-title">
-        <p class="title-text1">Ma liste</p>
+        <p class="title-text1">Mes messages</p>
     </div>
 </div>
 <div class="box">
     <article class="media">
         <div class="media-left">
-            <figure class="image is-64x64">
-                <img src="../icons/icons8-purple-man-96.png" alt="Image">
+            <figure class="image is-48x48">
+                <img class="is-rounded" src="../img/monstree.jpg"/>
             </figure>
         </div>
         <div class="media-content">
             <div class="content">
                 <p>
-                    <strong>John Smith</strong> <small>Level</small>
+                    <strong>Ravenous demon</strong> <small>level 5</small>
                     <br>
-                    Description
+                    Pourquoi tu réponds pas ??
                 </p>
             </div>
             <nav class="level is-mobile">
@@ -60,22 +66,22 @@
     </article>
     <footer class="card-footer">
         <a href="#" class="card-footer-item">Supprimer</a>
-        <a href="#" class="card-footer-item">Message</a>
+        <a href="#" class="card-footer-item">Ecrire</a>
     </footer>
 </div>
 <div class="box">
     <article class="media">
         <div class="media-left">
-            <figure class="image is-64x64">
-                <img src="../icons/icons8-purple-man-96.png" alt="Image">
+            <figure class="image is-48x48">
+                <img class="is-rounded" src="../img/monstreeee.jpg"/>
             </figure>
         </div>
         <div class="media-content">
             <div class="content">
                 <p>
-                    <strong>John Smith</strong> <small>Level</small>
+                    <strong>Hellcarver demon</strong> <small>level 5</small>
                     <br>
-                    Description
+                    J'ai adoré ce sorbert aux ongles hier soir !
                 </p>
             </div>
             <nav class="level is-mobile">
@@ -101,22 +107,22 @@
     </article>
     <footer class="card-footer">
         <a href="#" class="card-footer-item">Supprimer</a>
-        <a href="#" class="card-footer-item">Message</a>
+        <a href="#" class="card-footer-item">Ecrire</a>
     </footer>
 </div>
 <div class="box">
     <article class="media">
         <div class="media-left">
-            <figure class="image is-64x64">
-                <img src="../icons/icons8-purple-man-96.png" alt="Image">
+            <figure class="image is-48x48">
+                <img class="is-rounded" src="../img/monstreeeeeeeeee.jpg"/>
             </figure>
         </div>
         <div class="media-content">
             <div class="content">
                 <p>
-                    <strong>John Smith</strong> <small>Level</small>
+                    <strong>Illusonary Demon</strong> <small>level 4</small>
                     <br>
-                    Description
+                    Coucou mon troll d'amour !
                 </p>
             </div>
             <nav class="level is-mobile">
@@ -142,12 +148,8 @@
     </article>
     <footer class="card-footer">
         <a href="#" class="card-footer-item">Supprimer</a>
-        <a href="#" class="card-footer-item">Message</a>
+        <a href="#" class="card-footer-item">Ecrire</a>
     </footer>
-</div>
-<div class="buttons">
-    <a th:href="@{/}"><button class="button is-info">Déconnexion</button></a>
-    <a th:href="@{catalogue}"><button class="button is-danger">Catalogue</button></a>
 </div>
 </body>
 </html>

@@ -4,35 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" th:href="@{css/catalogue.css}">
-    <link rel="icon" href="../img/coeurlogo.png" />
+    <link rel="stylesheet" th:href="@{../css/catalogue.css}">
+    <link rel="icon" href="../img/coeurlogo.png"/>
     <title>Monster - Catalogue</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"/>
 </head>
 <body>
 <div class="block">
     <header class="header">
-        <a th:href="@{catalogue}"><img class="heart-logo-image" src="../img/coeurlogo.png" alt="logo heart"></a>
-        <a th:href="@{account}"><img class="header-logo-avatar" src="../icons/icons8-purple-man-96.png" alt="logo avatar"></a>
-        <a th:href="@{discussion}"><img class="header-logo-courier" src="../icons/icons8-message-chat-100.png" alt="logo courier"></a>
+        <a th:href="@{http://localhost:8080/catalogue/{id}(id=${monsterInfos.id})}"><img class="heart-logo-image"
+                                                                                         src="../img/coeurlogo.png"
+                                                                                         alt="logo heart"></a>
+        <a th:href="@{http://localhost:8080/account/{id}(id=${monsterInfos.id})}"><img class="header-logo-avatar"
+                                                                                       src="../icons/icons8-purple-man-96.png"
+                                                                                       alt="logo avatar"></a>
+        <a th:href="@{http://localhost:8080/listmatch/{id}(id=${monsterInfos.id})}"><img class="header-logo-courier"
+                                                                                         src="../icons/icons8-message-chat-100.png"
+                                                                                         alt="logo courier"></a>
     </header>
 </div>
 <div class="block">
     <div class="container">
         <div class="tile">
             <article class="tile is-child notification is-info has-background-danger">
-                <p class="title">Pseudo du monstre</p>
-                <p class="subtitle">Level</p>
+                <p th:text="${monsterInfos.name}" class="title"></p>
+                <p th:text="|Level : ${monsterInfos.level}|" class="title"></p>
                 <figure class="image is-4by4">
-                    <a th:href="@{profile}"><img class="image-catalogue" src="../img/background_index.jpeg" /></a>
+                    <a th:href="@{http://localhost:8080/profile/{id}(id=${monsterInfos.id})}"><img
+                            class="image-catalogue" th:src="${monsterInfos.picture}"/></a>
                 </figure>
             </article>
         </div>
     </div>
 </div>
 <div class="block">
-    <a href="#"><img class="thumb-down" src="../icons/down.png" alt="logo avatar"></a>
-    <a href="#"><img class="thumb-up" src="../icons/icons8-zombie-hand-thumbs-up-64.png" alt="logo heart"></a>
+    <a th:href="@{http://localhost:8080/catalogue/{id}(id=(${id} == 20 ? 1 : ${monsterInfos.id} + 1))}"><img
+            class="thumb-down"
+            src="../icons/down.png"
+            alt="logo avatar"></a>
+    <a th:href="@{http://localhost:8080/match/{id}(id=${monsterInfos.id})}"><img class="thumb-up"
+                                                                                 src="../icons/icons8-zombie-hand-thumbs-up-64.png"
+                                                                                 alt="logo heart"></a>
 </div>
 </body>
 </html>
