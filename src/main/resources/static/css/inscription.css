@@ -29,7 +29,7 @@ body,html {
 }
 
 .heart-logo-image {
-    margin-left: 15px;
+    margin-left: -80px;
 }
 
 .header-logo-courier {
@@ -68,39 +68,9 @@ body,html {
     padding-right: 10px
 }
 
+/*BUTTONS*/
 
-/*IMAGE*/
-
-.avatar-description {
-    height: 150px;
-    width: 150px;
-    margin-top: 40px;
-    display: block;
-    opacity: 0.8;
+.block {
+    margin-left: 90px;
+    margin-bottom: 25px;
 }
-
-.container image {
-    border-radius: 50px;
-}
-
-
-
-/*CORPS*/
-
-.container {
-    opacity: 0.8;
-}
-
-
-article p {
-    opacity: 0.8;
-}
-
-/*BUTTON*/
-
-.buttons a {
-    display: block;
-    margin : auto;
-}
-
-

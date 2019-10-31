@@ -63,6 +63,13 @@ public class MonsterController {
         return "listmatch";
     }
 
+    @GetMapping("/inscription/{id}")
+    public String inscription(Model model, @PathVariable Long id) {
+        Monster monsterObject = getMonsterFromAPI(id);
+        model.addAttribute("monsterInfos", monsterObject);
+        return "inscription";
+    }
+
     private Monster getMonsterFromAPI(Long id) {
         WebClient webClient = WebClient.create(MONSTER_URL);
         Mono<String> call = webClient.get()
