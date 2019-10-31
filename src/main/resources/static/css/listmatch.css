@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Hack';
+    src: url("../fonts/Hack-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body,html {
+    background: url(../img/wallpaper-dark.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+/*HEADER*/
+
+
+.header {
+    margin-top: 0;
+}
+
+.header a img {
+    margin-top: 15px;
+    height: 35px;
+    width: 35px;
+}
+
+.heart-logo-image {
+    margin-left: 15px;
+}
+
+.header-logo-courier {
+    float: right;
+    margin-right: 10px;
+}
+
+.header-logo-avatar {
+    float: right;
+    margin-right: 15px;
+}
+
+
+/*IMAGE*/
+
+.avatar-description {
+    height: 150px;
+    width: 150px;
+    margin-top: 75px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/*CORPS*/
+
+.container {
+    opacity: 0.8;
+}
+
+
+/*BUTTONS*/
+
+
+.is-info {
+    margin-left: 15px;
+}
+
+.is-warning {
+    float: right;
+    margin-right: 10px;
+}
+
+
+
