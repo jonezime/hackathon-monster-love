@@ -46,6 +46,11 @@ public class MonsterController {
         return "discussion";
     }
 
+    @GetMapping("/listmatch")
+    public String listmatch() {
+        return "listmatch";
+    }
+
     @GetMapping("/monsters")
         public String monster (Model model, @RequestParam Long id) {
 
