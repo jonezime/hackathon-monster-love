@@ -1,4 +1,9 @@
 @font-face {
+    font-family: 'Monster';
+    src: url(../fonts/mrsmonster.ttf);
+}
+
+@font-face {
     font-family: 'Hack';
     src: url("../fonts/Hack-Regular.ttf");
 }
@@ -51,13 +56,18 @@ body,html {
 .tile span {
     color:#fff;
     font-size:75px;
-    font-weight: bold;
+    letter-spacing: 5px;
     display : block;
     position : absolute;
     top : 35%;
-    left : 15%;
+    left : 20%;
     transform: rotate(-45deg);
     z-index: 999;
+    font-family: 'Monster';
+}
+
+.span {
+    transition: 5s;
 }
 
 .img_size {

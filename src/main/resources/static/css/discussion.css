@@ -68,7 +68,7 @@ body,html {
 /*IMAGE*/
 
 .avatar-description {
-    height: 150px;
+    height: auto;
     width: 150px;
     margin-top: 40px;
     display: block;
@@ -133,15 +133,7 @@ p {
 
 /*BUTTONS*/
 
-
-.is-info {
-    margin-top: 25px;
-    margin-left: 15px;
-    margin-right: 8px;
-}
-
-.is-warning {
-    margin-top: 25px;
-    float: right;
-    margin-right: 10px;
+.buttons a {
+    display: block;
+    margin : auto;
 }
