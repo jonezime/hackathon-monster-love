@@ -36,6 +36,11 @@ public class MonsterController {
         return "match";
     }
 
+    @GetMapping("/account")
+    public String account() {
+        return "account";
+    }
+
     @GetMapping("/monsters")
         public String monster (Model model, @RequestParam Long id) {
 
