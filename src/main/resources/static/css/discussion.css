@@ -1,0 +1,36 @@
+p {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    width: 60%;
+}
+
+.first-message {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.first-message-color {
+    background-color: grey;
+}
+
+.second-message {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.second-message-color {
+    background-color: purple;
+}
+
+.third-message {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.third-message-color {
+    background-color: grey;
+}
