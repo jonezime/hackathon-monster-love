@@ -66,7 +66,7 @@
     </article>
     <footer class="card-footer">
         <a href="#" class="card-footer-item">Supprimer</a>
-        <a href="#" class="card-footer-item">Ecrire</a>
+        <a class="card-footer-item" th:href="@{http://localhost:8080/discussion/{id}(id=${monsterInfos.id})}">Ecrire</a>
     </footer>
 </div>
 <div class="box">
@@ -107,7 +107,7 @@
     </article>
     <footer class="card-footer">
         <a href="#" class="card-footer-item">Supprimer</a>
-        <a href="#" class="card-footer-item">Ecrire</a>
+        <a class="card-footer-item" th:href="@{http://localhost:8080/discussion/{id}(id=${monsterInfos.id})}">Ecrire</a>
     </footer>
 </div>
 <div class="box">
@@ -148,8 +148,13 @@
     </article>
     <footer class="card-footer">
         <a href="#" class="card-footer-item">Supprimer</a>
-        <a href="#" class="card-footer-item">Ecrire</a>
+        <a class="card-footer-item" th:href="@{http://localhost:8080/discussion/{id}(id=${monsterInfos.id})}">Ecrire</a>
     </footer>
+</div>
+<div class="buttons">
+    <a th:href="@{http://localhost:8080/catalogue/{id}(id=${monsterInfos.id})}">
+        <button class="button is-danger">Catalogue</button>
+    </a>
 </div>
 </body>
 </html>

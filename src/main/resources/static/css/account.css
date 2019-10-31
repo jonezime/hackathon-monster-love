@@ -76,8 +76,11 @@ body,html {
     width: 150px;
     margin-top: 40px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    opacity: 0.8;
+}
+
+.container image {
+    border-radius: 50px;
 }
 
 
@@ -89,22 +92,8 @@ body,html {
 }
 
 
-/*BUTTONS*/
-
-
-.is-info {
-    margin-left: 15px;
-    margin-right: 8px;
+article p {
+    opacity: 0.8;
 }
-
-.is-warning {
-    float: right;
-    margin-right: 10px;
-}
-
-.is-danger {
-    margin-right: 8px;
-}
-
 
 
