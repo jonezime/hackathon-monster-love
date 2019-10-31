@@ -19,6 +19,7 @@ body,html {
 
 .header {
     margin-top: 0;
+    margin-bottom: 50px;
 }
 
 .header a img {
@@ -73,7 +74,7 @@ body,html {
 .avatar-description {
     height: 150px;
     width: 150px;
-    margin-top: 75px;
+    margin-top: 40px;
     display: block;
     margin-left: auto;
     margin-right: auto;
