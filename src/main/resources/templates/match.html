@@ -17,7 +17,6 @@
         <a th:href="@{discussion}"><img class="header-logo-courier" src="../icons/icons8-message-chat-100.png" alt="logo courier"></a>
     </header>
 </div>
-
 <div class="container">
     <div class="tile is-ancestor">
         <div class="tile is-4 is-vertical is-parent">
@@ -31,7 +30,7 @@
     </div>
 </div>
 <div class="buttons">
-    <button class="button is-danger is-large is-fullwidth">Commencez une conversation</button>
+    <a th:href="@{discussion}"><button class="button is-danger is-large is-fullwidth">Commencez une conversation</button><a>
 </div>
 </body>
 </html>
