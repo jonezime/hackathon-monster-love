@@ -72,12 +72,12 @@ body,html {
 
 .is-info {
     margin-left: 15px;
+    margin-right: 8px;
 }
 
-.is-warning {
+.is-danger {
     float: right;
     margin-right: 10px;
 }
-
 
 

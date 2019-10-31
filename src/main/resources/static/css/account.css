@@ -44,6 +44,10 @@ body,html {
 
 /*TITRE*/
 
+.index {
+    margin-bottom: 25px;
+}
+
 .index-title {
     display: flex;
     flex-direction: column;
@@ -90,11 +94,16 @@ body,html {
 
 .is-info {
     margin-left: 15px;
+    margin-right: 8px;
 }
 
 .is-warning {
     float: right;
     margin-right: 10px;
+}
+
+.is-danger {
+    margin-right: 8px;
 }
 
 
