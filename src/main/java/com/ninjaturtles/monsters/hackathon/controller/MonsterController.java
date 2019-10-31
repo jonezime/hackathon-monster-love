@@ -41,6 +41,11 @@ public class MonsterController {
         return "account";
     }
 
+    @GetMapping("/discussion")
+    public String discussion() {
+        return "discussion";
+    }
+
     @GetMapping("/monsters")
         public String monster (Model model, @RequestParam Long id) {
 
