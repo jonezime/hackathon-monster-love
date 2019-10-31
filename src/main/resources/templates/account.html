@@ -12,10 +12,15 @@
 <body>
 <div class="block">
     <header class="header">
-        <a href="#"><img class="heart-logo-image" src="../img/coeurlogo.png" alt="logo heart"></a>
-        <a href="#"><img class="header-logo-avatar" src="../icons/icons8-purple-man-96.png" alt="logo avatar"></a>
-        <a href="#"><img class="header-logo-courier" src="../icons/icons8-message-chat-100.png" alt="logo courier"></a>
+        <a th:href="@{catalogue}"><img class="heart-logo-image" src="../img/coeurlogo.png" alt="logo heart"></a>
+        <a th:href="@{account}"><img class="header-logo-avatar" src="../icons/icons8-purple-man-96.png" alt="logo avatar"></a>
+        <a th:href="@{discussion}"><img class="header-logo-courier" src="../icons/icons8-message-chat-100.png" alt="logo courier"></a>
     </header>
+</div>
+<div class="index">
+    <div class="index-title">
+        <p class="title-text1">Mon profil</p>
+    </div>
 </div>
 <div class="block">
     <div class="container">
@@ -33,8 +38,9 @@
     </div>
 </div>
 <div class="buttons">
-    <button class="button is-info">Déconnexion</button>
-    <button class="button is-warning">Modifier profil</button>
+    <a th:href="@{/}"><button class="button is-info">Déconnexion</button></a>
+    <a th:href="@{listmatch}"><button class="button is-danger">Ma Liste</button></a>
+    <button class="button is-warning">Modifier</button>
 </div>
 </body>
 </html>

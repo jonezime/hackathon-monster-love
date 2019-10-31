@@ -41,38 +41,43 @@ body,html {
     margin-right: 15px;
 }
 
+/*TITRE*/
 
-/*IMAGE*/
-
-.avatar-description {
-    height: 150px;
-    width: 150px;
-    margin-top: 75px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.index {
+    margin-bottom: 25px;
 }
 
-
-
-/*CORPS*/
-
-.container {
-    opacity: 0.8;
+.index-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
 }
 
+.title-text1 {
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    background-color: #c15d73;
+    font-size: 26px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px
+}
 
 /*BUTTONS*/
 
 
 .is-info {
     margin-left: 15px;
+    margin-right: 8px;
 }
 
-.is-warning {
+.is-danger {
     float: right;
     margin-right: 10px;
 }
-
 
 
